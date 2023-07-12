@@ -1,0 +1,23 @@
+CREATE TABLE user (
+  id INTEGER PRIMARY KEY AUTO_INCREMENT,
+  FirstName VARCHAR(255),
+  LastName VARCHAR(255),
+  Email VARCHAR(255),
+  username TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL
+);
+
+
+CREATE TABLE `testDB`.`user` (
+  UserID INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  FirstName VARCHAR(255),
+  LastName VARCHAR(255),
+  Email VARCHAR(255),
+  username VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+
+ALTER TABLE `testDB`.`user` ADD Email VARCHAR(255);
+
+ALTER TABLE `testDB`.`user` ADD Password VARCHAR(255) NOT NULL;
